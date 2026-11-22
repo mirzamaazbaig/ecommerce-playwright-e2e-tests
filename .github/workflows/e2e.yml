@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   playwright:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
 
     services:
@@ -90,7 +90,7 @@ jobs:
           retention-days: 14
 
   cross-browser:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     strategy:
       fail-fast: false
